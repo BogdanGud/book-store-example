@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Main Kapmf",
+    "author": "Bob",
+    "year": 2011,
+    "price": 25
+  },
+  {
+    "title": "End of Watch",
+    "author": "Stephen King",
+    "year": 2011,
+    "price": 15
+  },
+  {
+    "title": "Harry Potter",
+    "author": "Stephen King",
+    "year": 2005,
+    "price": 20
+  },
+  {
+    "title": "Thinking in Java 4 Edition",
+    "author": "Bruce Eckel",
+    "year": 2011,
+    "price": 55
+  }
+
+]

@@ -1,0 +1,64 @@
+
+<div >
+    <a ui-sref="home">Back</a>
+
+    <div>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Books name</th>
+                <th>Books author</th>
+                <th>Books price</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="book in books">
+                <td scope="row">{{book.title}}</td>
+                <td scope="row">{{ book.author }}</td>
+                <td scope="row">$ {{ book.price }}</td>
+                <td>
+                    <div class="checkbox">
+                        <button ng-click="selectBook(book)">
+                            Add
+                        </button>
+                    </div>
+                </td>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    Ordered list
+    <div>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Books name</th>
+                <th>Books author</th>
+                <th>Books price</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="book in order.selectedBooks">
+                <td scope="row">{{book.title}}</td>
+                <td scope="row">{{ book.author }}</td>
+                <td scope="row">$ {{ book.price }}</td>
+                <td>
+                    <div class="checkbox">
+                        <button ng-click="cancelBook(book)">
+                            Cancel
+                        </button>
+                    </div>
+                </td>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <a ui-sref="shipping">Next</a>
+
+
+</div>
